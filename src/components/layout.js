@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import { Container } from 'react-bootstrap'
+import { Container, Row, Col } from "react-bootstrap"
 
 import Header from "./header"
 import "./layout.scss"
@@ -22,13 +22,36 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
 
       <main>{children}</main>
-      <Container>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </Container>
+
+      <footer>
+        <Container className="text-center">
+          <Row>
+            <Col>
+              <p className="footer-title">BLUM</p>
+              <p>@blumnailbarict</p>
+            </Col>
+            <Col>
+              <p>
+                3560 N Maize Rd Suite 102. <br />
+                Wichita, KS 67205
+              </p>
+              <p>(316) 729-2586</p>
+
+              <p>blumnailbarict@gmail.com</p>
+            </Col>
+            <Col>
+              <p>
+                home
+                <br />
+                services
+                <br />
+                contact us
+              </p>
+            </Col>
+          </Row>
+        </Container>
+        {/* © {new Date().getFullYear()} */}
+      </footer>
 
       <script
         src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"

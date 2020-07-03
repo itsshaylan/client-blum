@@ -1,12 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@700;900&family=Nunito+Sans&display=swap");
 
 html {
-  font-family: "Nunito Sans", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 body {
+  font-family: "Nunito Sans", sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #656565;
+
+  // background: linear-gradient(180deg, #fff 0%, #ffeefa 100%);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+footer {
+  padding: 64px;
+  background-color: #383838;
+  color: white;
 }

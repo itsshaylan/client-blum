@@ -1,10 +1,18 @@
+.billboard {
+  padding: 20vh 0;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  text-align: center;
+}
+
 .homepage_header {
   text-align: right;
-  background-color: pink;
+  // background-color: pink;
   padding: 20vh 0;
   color: #fff;
 
-  text-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 
   h1 {
     font-size: 8em;
@@ -14,6 +22,40 @@
   }
   p {
     font-size: 2em;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
+}
+
+.pad {
+  padding: 8vh 0;
+}
+
+.special {
+  border-radius: 16px 16px 0 0;
+  color: white;
+  padding: 0px 32px 8px;
+
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.special h4 {
+  font-weight: 900;
+  padding-top: 128px;
+}
+
+.special-desc {
+  height: 4em;
+  text-overflow: ellipsis;
+  padding-bottom: 10px;
+  overflow-y: unset;
+  margin-bottom: 16px;
+}
+
+.special-footer {
+  text-align: center;
+  color: white;
+  background-color: rgba(132, 117, 119, 0.5);
+  padding: 16px;
+  border-radius: 0 0 16px 16px;
 }
