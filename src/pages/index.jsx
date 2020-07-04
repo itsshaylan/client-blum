@@ -76,13 +76,16 @@ const IndexPage = () => {
             <Col md={3}>
               <h3>Contact Us</h3>
               <p>
-                3560 N Maize Rd Suite 102.
+                <a href={data.staticMap.url}>3560 N Maize Rd Suite 102.</a>
                 <br />
                 Wichita, KS 67205
               </p>
               <p>
-                (316) 729-2586
-                <br /> blumnailbarict@gmail.com
+                <a href="tel:+13167292586">(316) 729-2586</a>
+                <br />
+                <a href="mailto:blumnailbarict@gmail.com">
+                  blumnailbarict@gmail.com
+                </a>
               </p>
             </Col>
             <Col md={3}>

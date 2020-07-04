@@ -35,7 +35,9 @@ const Layout = ({ children }) => {
                 3560 N Maize Rd Suite 102. <br />
                 Wichita, KS 67205
               </p>
-              <p>(316) 729-2586</p>
+              <p>
+                <a href="tel:+13167292586">(316) 729-2586</a>
+              </p>
 
               <p>
                 <a href="mailto:blumnailbarict@gmail.com">
