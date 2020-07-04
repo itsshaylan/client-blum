@@ -27,4 +27,20 @@ footer {
   padding: 64px;
   background-color: #383838;
   color: white;
+
+  & a {
+    color: white;
+  }
+}
+
+footer .row div {
+  padding-top: 16px;
+  border-top: 1px solid #fff;
+}
+
+footer .footer-title {
+  font-family: "Barlow", sans-serif;
+  font-size: 32px;
+  margin: 0px;
+  font-weight: "900";
 }

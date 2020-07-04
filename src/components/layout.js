@@ -26,31 +26,34 @@ const Layout = ({ children }) => {
       <footer>
         <Container className="text-center">
           <Row>
-            <Col>
-              <p className="footer-title">BLUM</p>
+            <Col xs={12} md={4}>
+              <p className="footer-title">BLŪM</p>
               <p>@blumnailbarict</p>
             </Col>
-            <Col>
+            <Col xs={12} md={4} id="contact">
               <p>
                 3560 N Maize Rd Suite 102. <br />
                 Wichita, KS 67205
               </p>
               <p>(316) 729-2586</p>
 
-              <p>blumnailbarict@gmail.com</p>
-            </Col>
-            <Col>
               <p>
-                home
+                <a href="mailto:blumnailbarict@gmail.com">
+                  blumnailbarict@gmail.com
+                </a>
+              </p>
+            </Col>
+            <Col xs={12} md={4}>
+              <p>
+                <a href="/">home</a>
                 <br />
-                services
-                <br />
-                contact us
+                <a href="https://go.booker.com/location/BlumNailBarV1">
+                  book us
+                </a>
               </p>
             </Col>
           </Row>
         </Container>
-        {/* © {new Date().getFullYear()} */}
       </footer>
 
       <script

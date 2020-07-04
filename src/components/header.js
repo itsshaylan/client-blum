@@ -15,10 +15,11 @@ const Header = ({ siteTitle }) => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link href="/">home</Nav.Link>
-            <Nav.Link href="/">services</Nav.Link>
-            <Nav.Link href="/">book us</Nav.Link>
-            <Nav.Link href="/">about</Nav.Link>
-            <Nav.Link href="/">contact us</Nav.Link>
+            {/* <Nav.Link href="/">services</Nav.Link> */}
+            <Nav.Link href="https://go.booker.com/location/BlumNailBarV1">
+              book us
+            </Nav.Link>
+            <Nav.Link href="#contact">contact us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -45,6 +45,7 @@ const Social = props => {
         src={props.image.fluid.src}
         style={{
           borderRadius: "32px",
+          width: "100%",
           maxWidth: "256px",
           maxHeight: "256px",
           objectFit: "cover",
