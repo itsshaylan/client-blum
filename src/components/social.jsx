@@ -42,6 +42,7 @@ const Social = props => {
   if (!!props.image) {
     return (
       <img
+        alt="instagram.com/blumnailbar"
         src={props.image.fluid.src}
         style={{
           borderRadius: "32px",

@@ -15,6 +15,11 @@ import { useStaticQuery, graphql } from "gatsby"
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     {
+      site {
+        siteMetadata {
+          title
+        }
+      }
       staticMap {
         mapUrl
         childFile {
@@ -28,15 +33,17 @@ const IndexPage = () => {
     }
   `)
 
+  const sitetitle = data.site.siteMetadata.title
+
   return (
     <Layout>
-      <SEO title="BLUM Homepage" />
+      <SEO title={`${sitetitle} Homepage`} />
       <Billboard
         className="homepage_header"
         image="IMG_0068.jpg"
         style={{ "background-position": "center" }}
       >
-        <h1>BLUM</h1>
+        <h1>{sitetitle}</h1>
         <p>Nail Bar</p>
       </Billboard>
 
@@ -53,13 +60,13 @@ const IndexPage = () => {
         </div>
       </div>
 
-      <Billboard image="background-booth.jpg" color={"#847577"}>
-        <h1>What is BLUM?</h1>
+      <Billboard image="IMG_1100.jpg" color={"#847577"}>
+        <h1>What is {sitetitle}?</h1>
         <p>Beauty - Lashes - U - Me</p>
       </Billboard>
 
       <div className="container pad">
-        <h3>The BLUM Specials</h3>
+        <h3>The {sitetitle} Specials</h3>
         <Special />
       </div>
 
