@@ -89,7 +89,7 @@ const IndexPage = () => {
                 <span property="postalCode">67205</span>
               </p>
               <p>
-                <a href="tel:+13167292586" property="telephone">
+                <a href="tel:+13167292586" property="telephone" content="+13167292586">
                   (316) 729-2586
                 </a>
                 <br />
