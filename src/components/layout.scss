@@ -23,6 +23,16 @@ h4 {
   text-transform: uppercase;
 }
 
+.website {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
 footer {
   padding: 64px;
   background-color: #383838;

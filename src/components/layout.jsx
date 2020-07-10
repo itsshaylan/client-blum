@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className="website">
       <Header siteTitle={data.site.siteMetadata.title} />
 
       <main>{children}</main>
@@ -62,7 +62,7 @@ const Layout = ({ children }) => {
         src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
         crossorigin
       ></script>
-    </>
+    </div>
   )
 }
 
