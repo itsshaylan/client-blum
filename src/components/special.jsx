@@ -4,7 +4,6 @@ import { Col, Row } from "react-bootstrap"
 
 const Node = ({ data }) => {
   const node = data.node
-  console.log("image", node)
   return (
     <>
       <div
