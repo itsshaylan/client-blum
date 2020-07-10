@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://blumnailbar.com`,
     title: `BLŪM`,
     description: `BLUM : Beauty, Lashes, U & Me - Wichita's premiere nail bar`,
     author: `@blumnailbarict`,
@@ -43,6 +44,10 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/IMG_0010.jpg`, // This path is relative to the root of the site.
       },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {},
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
