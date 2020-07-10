@@ -43,7 +43,7 @@ const IndexPage = () => {
         image="IMG_0068.jpg"
         style={{ "background-position": "center" }}
       >
-        <h1>{sitetitle}</h1>
+        <h1 className="brand-title">{sitetitle}</h1>
         <p>Nail Bar</p>
       </Billboard>
 
@@ -60,7 +60,11 @@ const IndexPage = () => {
         </div>
       </div>
 
-      <Billboard image="IMG_0300_edit.jpg" color={"#847577"}>
+      <Billboard
+        image="IMG_0300_edit.jpg"
+        color={"#847577"}
+        className="index-whatis"
+      >
         <h1>What is {sitetitle}?</h1>
         <p>Beauty - Lashes - U - Me</p>
       </Billboard>
@@ -73,54 +77,38 @@ const IndexPage = () => {
       <div>
         <div className="container pad text-center">
           <Row>
-            <Col md={3}>
+            <Col md={6} vocab="http://schema.org/" typeof="NailSalon">
               <h3>Contact Us</h3>
-              <p>
-                <a href={data.staticMap.url}>3560 N Maize Rd Suite 102.</a>
+              <p property="address" typeof="PostalAddress">
+                <a href={data.staticMap.url} property="streetAddress">
+                  3560 N Maize Rd Suite 102.
+                </a>
                 <br />
-                Wichita, KS 67205
+                <span property="addressLocality">Wichita</span>,{" "}
+                <span property="addressRegion">KS</span>{" "}
+                <span property="postalCode">67205</span>
               </p>
               <p>
-                <a href="tel:+13167292586">(316) 729-2586</a>
+                <a href="tel:+13167292586" property="telephone">
+                  (316) 729-2586
+                </a>
                 <br />
-                <a href="mailto:blumnailbarict@gmail.com">
+                <a href="mailto:blumnailbarict@gmail.com" property="email">
                   blumnailbarict@gmail.com
                 </a>
               </p>
-            </Col>
-            <Col md={3}>
               <p>Hours of Operation</p>
-              <p>
-                Monday
+              <p property="openingHours" content="Mo,Tu,We,Th,Fr 09:00-19:00">
+                Monday - Friday
                 <br />
                 9:00 AM - 7:00 PM
               </p>
-              <p>
-                Tuesday
-                <br />
-                9:00 AM - 7:00 PM
-              </p>
-              <p>
-                Wednesday
-                <br />
-                9:00 AM - 7:00 PM
-              </p>
-              <p>
-                Thursday
-                <br />
-                9:00 AM - 7:00 PM
-              </p>
-              <p>
-                Friday
-                <br />
-                9:00 AM - 7:00 PM
-              </p>
-              <p>
+              <p property="openingHours" content="Sa 09:00-18:00">
                 Saturday
                 <br />
                 9:00 AM - 6:00 PM
               </p>
-              <p>
+              <p property="openingHours" content="Su 12:00-17:00">
                 Sunday
                 <br />
                 12:00 PM - 5:00 PM
