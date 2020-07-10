@@ -60,7 +60,7 @@ const IndexPage = () => {
         </div>
       </div>
 
-      <Billboard image="IMG_1100.jpg" color={"#847577"}>
+      <Billboard image="IMG_0300_edit.jpg" color={"#847577"}>
         <h1>What is {sitetitle}?</h1>
         <p>Beauty - Lashes - U - Me</p>
       </Billboard>
