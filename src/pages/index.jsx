@@ -2,13 +2,11 @@ import React from "react"
 import "./index.scss"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import Social from "../components/social"
 import SEO from "../components/seo"
 import Billboard from "../components/billboard"
 import Special from "../components/special"
 
-import background from "../images/IMG_0091.jpg"
 import { Col, Row } from "react-bootstrap"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -77,7 +75,8 @@ const IndexPage = () => {
       <div>
         <div className="container pad text-center">
           <Row>
-            <Col md={6} vocab="http://schema.org/" typeof="NailSalon">
+            <Col md={6}>
+            {/* <Col md={6} vocab="http://schema.org/" typeof="NailSalon"> */}
               <h3>Contact Us</h3>
               <p property="address" typeof="PostalAddress">
                 <a href={data.staticMap.url} property="streetAddress">
@@ -89,7 +88,11 @@ const IndexPage = () => {
                 <span property="postalCode">67205</span>
               </p>
               <p>
-                <a href="tel:+13167292586" property="telephone" content="+13167292586">
+                <a
+                  href="tel:+13167292586"
+                  property="telephone"
+                  content="+13167292586"
+                >
                   (316) 729-2586
                 </a>
                 <br />
@@ -111,13 +114,14 @@ const IndexPage = () => {
               <p property="openingHours" content="Su 12:00-17:00">
                 Sunday
                 <br />
-                12:00 PM - 5:00 PM
+              12:00 PM - 5:00 PM
               </p>
             </Col>
             <Col md={6}>
               <a href={data.staticMap.url}>
                 <img
                   src={data.staticMap.childFile.childImageSharp.fluid.src}
+                  alt=""
                   style={{ width: "100%" }}
                 />
               </a>
