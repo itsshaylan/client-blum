@@ -1,9 +1,11 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import { Col, Row } from "react-bootstrap"
 
 const Node = ({ data }) => {
   const node = data.node
+
+  const productsLink = require("path").join("products", node.type)
   return (
     <>
       <div
@@ -15,7 +17,9 @@ const Node = ({ data }) => {
         <h4>{node.title}</h4>
         <div className="special-desc">{node.description}</div>
       </div>
-      <div className="special-footer">see all {node.type} options</div>
+      <div className="special-footer">
+        <Link to={productsLink}>see all {node.type} options</Link>
+      </div>
     </>
   )
 }
