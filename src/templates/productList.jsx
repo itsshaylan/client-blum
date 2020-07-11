@@ -29,7 +29,7 @@ const ProductsList = ({ data }) => {
       </Billboard>
       <Breadcrumb
         items={[
-          { link: "/index", text: "Home" },
+          { link: "/", text: "Home" },
           { link: "/products", text: "Products" },
           { link: `/products/${page.type}`, text: page.type },
         ]}
