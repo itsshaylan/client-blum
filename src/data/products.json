@@ -1,0 +1,404 @@
+[
+  {
+    "type": "lashes",
+    "products": [
+      {
+        "code": "blumclassic",
+        "type": "lashes",
+        "addon": "FALSE",
+        "price": 149,
+        "priceAlt": 75,
+        "name": "BLUM Classic",
+        "description": "2 lash extensions is attached to 1 natural lash, perfect to enhance your natural lashes."
+      },
+      {
+        "code": "hybrid",
+        "type": "lashes",
+        "addon": "FALSE",
+        "price": 179,
+        "priceAlt": 89,
+        "name": "Hybrid",
+        "description": "1/2 advance classic lashes + 1/2 volume lashes. Gives the definition of classic with the fullness of volume. Great for those with thinner natural lashes."
+      },
+      {
+        "code": "volume",
+        "type": "lashes",
+        "addon": "FALSE",
+        "price": 199,
+        "priceAlt": 99,
+        "name": "Volume",
+        "description": "Multiple fans of 3-5 extensions are applied to a single natural lash. Volume lashes are lighter, fluffier and gives a fuller look. Perfect for those who have sparse lashes."
+      },
+      {
+        "code": "megavolume",
+        "type": "lashes",
+        "addon": "FALSE",
+        "price": 249,
+        "priceAlt": 129,
+        "name": "Mega Volume",
+        "description": "For the ultimate in weightless voluminous lashes. Mega volume gives eyelashes the appearance of intense volume, fullness, and length."
+      },
+      {
+        "code": "lashlifts",
+        "type": "lashes",
+        "addon": "FALSE",
+        "price": 70,
+        "priceAlt": 70,
+        "name": "Lash Lifts",
+        "description": "A semi permanent curl for your natural lashes that shapes them into the perfect eye-opening curl."
+      },
+      {
+        "code": "lasttint",
+        "type": "lashes",
+        "addon": "FALSE",
+        "price": 20,
+        "priceAlt": 20,
+        "name": "Last Tint",
+        "description": "Semi permanent color, often paired with a Lash Lift to make lashes darker and stand out more."
+      },
+      {
+        "code": "removal",
+        "type": "lashes",
+        "addon": "TRUE",
+        "price": 20,
+        "priceAlt": 20,
+        "name": "Removal",
+        "description": ""
+      },
+      {
+        "code": "foreignfills",
+        "type": "lashes",
+        "addon": "TRUE",
+        "price": 40,
+        "priceAlt": 40,
+        "name": "Foreign Fills",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "type": "manicure",
+    "products": [
+      {
+        "code": "classicmanicure",
+        "type": "manicure",
+        "addon": "FALSE",
+        "price": 23,
+        "priceAlt": 23,
+        "name": "Classic Manicure",
+        "description": "Hand soak, Cuticle trim, Massage, Hot towel and Polish"
+      },
+      {
+        "code": "blummanicure",
+        "type": "manicure",
+        "addon": "FALSE",
+        "price": 35,
+        "priceAlt": 35,
+        "name": "BLUM Manicure",
+        "description": "Classic manicure plus exfoliating sugar scrub, moisturizing mask and extended massage."
+      },
+      {
+        "code": "gelpolishmanicure",
+        "type": "manicure",
+        "addon": "FALSE",
+        "price": 38,
+        "priceAlt": 38,
+        "name": "Gel Polish Manicure",
+        "description": "All the luxury of our BLUM manicure with a choice gel color that dries instantly. Lasts two weeks."
+      },
+      {
+        "code": "dippowder",
+        "type": "manicure",
+        "addon": "FALSE",
+        "price": 44,
+        "priceAlt": 44,
+        "name": "Dip Powder",
+        "description": "Organic colored powder applied to natural nails or extend length, adding calcium and five kinds of vitamins."
+      },
+      {
+        "code": "acrylics",
+        "type": "manicure",
+        "addon": "FALSE",
+        "price": 35,
+        "priceAlt": 35,
+        "name": "Acrylics",
+        "description": "Polymer powder mixed with liquid, lengthens/strengthens nails."
+      },
+      {
+        "code": "acrylicfill",
+        "type": "manicure",
+        "addon": "FALSE",
+        "price": 24,
+        "priceAlt": 24,
+        "name": "Acrylic Fill",
+        "description": ""
+      },
+      {
+        "code": "ombrefullset",
+        "type": "manicure",
+        "addon": "FALSE",
+        "price": 59,
+        "priceAlt": 59,
+        "name": "Ombre Full Set",
+        "description": ""
+      },
+      {
+        "code": "manicure",
+        "type": "manicure",
+        "addon": "TRUE",
+        "price": 15,
+        "priceAlt": 15,
+        "name": "Manicure",
+        "description": ""
+      },
+      {
+        "code": "pedicure",
+        "type": "manicure",
+        "addon": "TRUE",
+        "price": 23,
+        "priceAlt": 23,
+        "name": "Pedicure",
+        "description": ""
+      },
+      {
+        "code": "addongel",
+        "type": "manicure",
+        "addon": "TRUE",
+        "price": 10,
+        "priceAlt": 10,
+        "name": "Add on Gel",
+        "description": ""
+      },
+      {
+        "code": "polishchange",
+        "type": "manicure",
+        "addon": "TRUE",
+        "price": 8,
+        "priceAlt": 10,
+        "name": "Polish Change",
+        "description": ""
+      },
+      {
+        "code": "gelpolish",
+        "type": "manicure",
+        "addon": "TRUE",
+        "price": 15,
+        "priceAlt": 20,
+        "name": "Gel Polish",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "type": "pedicure",
+    "products": [
+      {
+        "code": "fresh",
+        "type": "pedicure",
+        "addon": "FALSE",
+        "price": 30,
+        "priceAlt": 30,
+        "name": "Fresh",
+        "description": "Classic pedi includes natural nail care & reshaping, cuticle details & buffing plus Cooling Gel."
+      },
+      {
+        "code": "ritzy",
+        "type": "pedicure",
+        "addon": "FALSE",
+        "price": 39,
+        "priceAlt": 39,
+        "name": "Ritzy",
+        "description": "Fresh pedi plus Callus Treatment + Sugar Scrub."
+      },
+      {
+        "code": "downtown",
+        "type": "pedicure",
+        "addon": "FALSE",
+        "price": 49,
+        "priceAlt": 49,
+        "name": "Downtown",
+        "description": "Classic Pedi plus Callus Treatment + Exfoliating Sugar Scrub"
+      },
+      {
+        "code": "plus",
+        "type": "pedicure",
+        "addon": "FALSE",
+        "price": 59,
+        "priceAlt": 59,
+        "name": "Plus",
+        "description": "Classic pedi plus an Intensive Soak + Callus Treatment + Exfoliating Sugar Scrub + Collagen Mask + Extended Massage with Hot Stones."
+      },
+      {
+        "code": "uptown",
+        "type": "pedicure",
+        "addon": "FALSE",
+        "price": 69,
+        "priceAlt": 69,
+        "name": "Uptown",
+        "description": "Classic pedi plus an Stimulating Bubbling Foot Bath + Callus Treatment + Invigorating Sugar Scrub + Rejuvenating Collagen Mud Mask + Warm Paraffin Wax Treatment + Extended Massage with Hot Stones."
+      },
+      {
+        "code": "blum",
+        "type": "pedicure",
+        "addon": "FALSE",
+        "price": 79,
+        "priceAlt": 79,
+        "name": "BLUM",
+        "description": "Classic pedi plus Intensive Organic Foot Bath + Hot/ Cold Therapeutic Neck Wrap + Hand Collagen Gloves + Invigorating Sugar Scrub + Intensive Callus Treatment + Intensive Collagen Mud Mask + Warm Paraffin Wax Treatment + Extended Massage with Hot Stones."
+      },
+      {
+        "code": "tips",
+        "type": "pedicure",
+        "addon": "TRUE",
+        "price": 5,
+        "priceAlt": 5,
+        "name": "Tips",
+        "description": ""
+      },
+      {
+        "code": "nailshape",
+        "type": "pedicure",
+        "addon": "TRUE",
+        "price": 5,
+        "priceAlt": 5,
+        "name": "Nail Shape",
+        "description": ""
+      },
+      {
+        "code": "cut-down",
+        "type": "pedicure",
+        "addon": "TRUE",
+        "price": 3,
+        "priceAlt": 3,
+        "name": "Cut-Down",
+        "description": ""
+      },
+      {
+        "code": "soak-offonly",
+        "type": "pedicure",
+        "addon": "TRUE",
+        "price": 10,
+        "priceAlt": 10,
+        "name": "Soak-off only",
+        "description": ""
+      },
+      {
+        "code": "gelpolishadd-on",
+        "type": "pedicure",
+        "addon": "TRUE",
+        "price": 15,
+        "priceAlt": 15,
+        "name": "Gel Polish Add-On",
+        "description": ""
+      },
+      {
+        "code": "french",
+        "type": "pedicure",
+        "addon": "TRUE",
+        "price": 5,
+        "priceAlt": 5,
+        "name": "French",
+        "description": ""
+      },
+      {
+        "code": "ombrefullset",
+        "type": "pedicure",
+        "addon": "TRUE",
+        "price": 10,
+        "priceAlt": 15,
+        "name": "Ombre Full Set",
+        "description": ""
+      },
+      {
+        "code": "chrome",
+        "type": "pedicure",
+        "addon": "TRUE",
+        "price": 15,
+        "priceAlt": 15,
+        "name": "Chrome",
+        "description": ""
+      },
+      {
+        "code": "naildesigns",
+        "type": "pedicure",
+        "addon": "TRUE",
+        "price": 5,
+        "priceAlt": 5,
+        "name": "Nail Designs",
+        "description": ""
+      },
+      {
+        "code": "paraffinwax",
+        "type": "pedicure",
+        "addon": "TRUE",
+        "price": 10,
+        "priceAlt": 10,
+        "name": "Paraffin Wax",
+        "description": ""
+      },
+      {
+        "code": "callus",
+        "type": "pedicure",
+        "addon": "TRUE",
+        "price": 5,
+        "priceAlt": 5,
+        "name": "Callus",
+        "description": ""
+      },
+      {
+        "code": "collagenhandorfeet",
+        "type": "pedicure",
+        "addon": "TRUE",
+        "price": 10,
+        "priceAlt": 10,
+        "name": "Collagen Hand or feet",
+        "description": ""
+      },
+      {
+        "code": "repairs",
+        "type": "pedicure",
+        "addon": "TRUE",
+        "price": 5,
+        "priceAlt": 5,
+        "name": "Repairs",
+        "description": ""
+      },
+      {
+        "code": "buffshine",
+        "type": "pedicure",
+        "addon": "TRUE",
+        "price": 8,
+        "priceAlt": 8,
+        "name": "Buff Shine",
+        "description": ""
+      },
+      {
+        "code": "cuticletrim",
+        "type": "pedicure",
+        "addon": "TRUE",
+        "price": 5,
+        "priceAlt": 5,
+        "name": "Cuticle Trim",
+        "description": ""
+      },
+      {
+        "code": "polishchange",
+        "type": "pedicure",
+        "addon": "TRUE",
+        "price": 13,
+        "priceAlt": 16,
+        "name": "Polish Change",
+        "description": ""
+      },
+      {
+        "code": "gelpolishchange",
+        "type": "pedicure",
+        "addon": "TRUE",
+        "price": 20,
+        "priceAlt": 25,
+        "name": "Gel Polish Change",
+        "description": ""
+      }
+    ]
+  }
+]
