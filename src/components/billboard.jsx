@@ -2,7 +2,11 @@ import React from "react"
 import { Container } from "react-bootstrap"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Billboard = ({ image, color, className, children }) => {
+const Billboard = ({ image, color, className, children, padding }) => {
+  image = !!image ? image : "IMG_0300_edit.jpg"
+  color = !color ? "#847577" : color
+  padding = !!padding ? `${padding}vh 0` : `20vh 0`
+  console.log(image)
   const data = useStaticQuery(graphql`
     query {
       images: allImageSharp {
@@ -22,7 +26,6 @@ const Billboard = ({ image, color, className, children }) => {
   `)
   const img = data.images.nodes.find(img => img.fluid.originalName === image)
 
-  color = !color ? "#847577" : color
   return (
     <div
       className={`billboard ${className}`}
@@ -31,6 +34,7 @@ const Billboard = ({ image, color, className, children }) => {
         "background-blend-mode": `color, hard-light, normal`,
         "background-position": `center center`,
         "background-size": "cover",
+        padding: padding,
       }}
     >
       <Container>{children}</Container>
