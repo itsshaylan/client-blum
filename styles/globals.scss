@@ -75,6 +75,7 @@ header .container {
     width: 100%;
 
     @include monitor {
+      display: flex !important;
       border-top: none;
       flex-direction: row;
       justify-content: space-between;
