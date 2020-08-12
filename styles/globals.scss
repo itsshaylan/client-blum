@@ -12,6 +12,7 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  line-height: 125%;
 }
 
 * {
@@ -20,12 +21,25 @@ a {
   padding: 0;
 }
 
+.content {
+  display: block;
+  align-content: inherit;
+  padding: 2vh 5vw;
+
+  @include monitor {
+    padding: 5vh 0;
+    width: 90vw;
+    max-width: $size-max;
+    margin: 0 auto;
+  }
+}
 .container {
   display: inherit;
   align-content: inherit;
   flex-direction: inherit;
-  max-width: 1440px;
+  max-width: $size-monitor;
   width: 100%;
+  margin: 0 auto;
 }
 
 header {
@@ -128,4 +142,19 @@ header .container {
   color: $text-alt;
   background-color: $primary;
   border: 1px darken($primary, 10%);
+}
+
+// Banner
+.banner {
+  padding: 20vh 0;
+  width: 100vw;
+
+  background-size: cover;
+  background-position: center center;
+
+  color: #fff;
+  text-align: center;
+
+  & .container {
+  }
 }
