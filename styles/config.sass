@@ -1,3 +1,7 @@
+// FONTS
+$font-body: 'Nunito'
+$font-head: 'Playfair Display' 
+
 // SIZES
 $size-mobile: 425px
 $size-tablet: 768px
@@ -5,12 +9,16 @@ $size-monitor: 1024px
 $size-max: 1140px
 
 // SIZES MIXIN
-@mixin mobile
+@mixin mobile-only
   @media (max-width: #{$size-tablet - 1px})
     @content
 
-@mixin tablet
+@mixin tablet-only
   @media (min-width: #{$size-tablet}) and (max-width: #{$size-monitor - 1px})
+    @content
+
+@mixin tablet
+  @media (min-width: #{$size-mobile + 1})
     @content
 
 @mixin monitor

@@ -1,12 +1,15 @@
 @import "config.sass";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@900&display=swap");
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: $font-body, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Nunito" sans-serif;
   background-color: $background;
+  color: lighten($black, 20%);
 }
 
 a {
@@ -21,10 +24,35 @@ a {
   padding: 0;
 }
 
+h1 {
+  font-family: $font-head, serif;
+  font-weight: 900;
+}
+
+h2 {
+  color: lighten($black, 10%);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.page {
+  padding-top: 20px;
+}
+
 .content {
   display: block;
   align-content: inherit;
-  padding: 2vh 5vw;
+  padding: 2vh 0vw;
+
+  line-height: 1.4em;
+
+  h2 {
+    margin-bottom: 16px;
+  }
+
+  & p {
+    margin-bottom: 16px;
+  }
 
   @include monitor {
     padding: 5vh 0;
@@ -38,12 +66,29 @@ a {
   align-content: inherit;
   flex-direction: inherit;
   max-width: $size-monitor;
-  width: 100%;
+  width: 90vw;
   margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
 }
 
 header {
   background-color: $navbar-bg;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
 }
 header .container {
   background-color: $navbar-bg;
@@ -54,6 +99,8 @@ header .container {
   flex-direction: column;
   align-items: center;
 
+  width: 100% !important;
+
   @include monitor {
     padding: 0px auto;
     margin: 0px auto;
@@ -63,6 +110,7 @@ header .container {
 
   // Header logo
   & .header-logo {
+    font-family: $font-head;
     text-align: right;
     display: flex;
     justify-content: space-between;
@@ -82,11 +130,19 @@ header .container {
   }
 
   & > nav {
-    display: flex;
+    display: none;
     flex-direction: column;
     flex-grow: 2;
     border-top: 1px lighten($navbar-bg, 10%) solid;
     width: 100%;
+
+    &.hide {
+      display: none;
+    }
+
+    &.show {
+      display: flex;
+    }
 
     @include monitor {
       display: flex !important;
@@ -99,6 +155,7 @@ header .container {
   & > nav > ul {
     display: flex;
     flex-direction: column;
+    font-weight: normal;
     align-items: center;
     @include monitor {
       flex-direction: row;
@@ -144,6 +201,12 @@ header .container {
   border: 1px darken($primary, 10%);
 }
 
+.button-large {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
 // Banner
 .banner {
   padding: 20vh 0;
@@ -156,5 +219,13 @@ header .container {
   text-align: center;
 
   & .container {
+    max-width: $size-max;
+  }
+
+  & .button {
+    margin-top: 32px;
+    color: $primary;
+    background-color: white;
+    font-size: 1.5em;
   }
 }
