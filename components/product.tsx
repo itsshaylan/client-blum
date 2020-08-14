@@ -34,6 +34,7 @@ export const ProductList: React.FunctionComponent<ProductListProps> = props => {
         {images.map(image => {
           return (
             <div
+              key={image}
               className={styles.image}
               style={{ backgroundImage: `url(${image})` }}
             ></div>

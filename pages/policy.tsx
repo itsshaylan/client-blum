@@ -14,7 +14,7 @@ export async function getStaticProps() {
 export default function PolicyPage({ data }) {
   return (
     <Layout page="/policy" title="Policy">
-      <Banner path="unsplash.jpg">
+      <Banner path="5Q0A8733.jpg">
         <h1>policy</h1>
       </Banner>
 
