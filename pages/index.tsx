@@ -4,11 +4,24 @@ import Layout from "../components/layout"
 import { Card, CardStyle } from "../components/card"
 import { Banner } from "../components/banner"
 
-export default function Home() {
+// import { imageSet } from "../components/image"
+
+export async function getStaticProps() {
+  const json = require("../data/products.json")
+  return {
+    props: {
+      data: json,
+    },
+  }
+}
+
+export default function Home({ data }) {
+  // console.log(imageSet("5Q0A8742.jpg"))
+
   return (
     <Layout page="/">
       <Banner path="5Q0A8786.jpg" padding="20vh">
-        <h1>Beauty - Lashes - U - Me</h1>
+        <h1 className={styles.title}>Beauty - Lashes - U - Me</h1>
         <a className="button button-large" href="#">
           BOOK ONLINE
         </a>
@@ -49,35 +62,15 @@ export default function Home() {
         </div>
       </div>
       {/* images */}
-      <div className="content">
-        <div className="container">
-          <h2>images</h2>
-        </div>
-      </div>
+      <div className={styles.grid}></div>
+      {/* footer */}
       <div className="content">
         <div className="container">
           <div className={CardStyle.card_container}>
-            <Card>
-              <h3>Manicures</h3>
-              <p>
-                Natural nail care and reshaping, cutical details, buffing, and
-                cooling gel. Intensive soak.
-              </p>
-            </Card>
-            <Card image="5Q0A8742.jpg">
-              <h3>Manicures</h3>
-              <p>
-                Natural nail care and reshaping, cutical details, buffing, and
-                cooling gel. Intensive soak.
-              </p>
-            </Card>
-            <Card>
-              <h3>Manicures</h3>
-              <p>
-                Natural nail care and reshaping, cutical details, buffing, and
-                cooling gel. Intensive soak.
-              </p>
-            </Card>
+            {data.map(d => {
+              const dImg = d.images[0]
+              return <Card key={d.type} image={dImg} type={d.type}></Card>
+            })}
           </div>
         </div>
       </div>

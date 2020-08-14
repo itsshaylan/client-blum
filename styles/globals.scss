@@ -180,7 +180,7 @@ header .container {
   }
 
   & > nav > ul > li .active {
-    color: lighten($navbar-text, 20%);
+    color: $navbar-text-active;
     font-weight: bold;
   }
 

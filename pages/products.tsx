@@ -13,7 +13,11 @@ export default function Page({ data }) {
   })
 
   return (
-    <Layout page="/products">
+    <Layout
+      page="/products"
+      title="Products"
+      description="Services and Products provided by BLUM nail bar"
+    >
       <Banner path="5Q0A8761.jpg">
         <h1>products</h1>
       </Banner>
@@ -26,8 +30,9 @@ export default function Page({ data }) {
           return (
             <ProductList
               images={d.images}
-              products={d.products}
+              key={d.type}
               type={d.type}
+              products={d.products}
             />
           )
         })}

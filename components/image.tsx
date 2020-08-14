@@ -2,26 +2,24 @@ type ImageProps = {
   path: string
 }
 
-const Image: React.FunctionComponent<ImageProps> = props => {
-  const path = "unsplash.jpg"
-  return (
-    <div className="image-container">
-      <img src={require(`images/{path}?trace`).trace} />
-      <img src={require(`images/{path}?webp`)} />
-      <style jsx>
-        {`
-          .image-container {
-            position: relative;
-          }
-          img {
-            position: absolute;
-            top: 0;
-            left: 0;
-          }
-        `}
-      </style>
-    </div>
-  )
+export const imageSizes: number[] = [640, 750, 1080]
+
+export function imageSrc(path: string, width?: number): string {
+  const filename: string = !!path ? path : "default.jpg"
+  const size = !!width ? width : imageSizes[0]
+
+  const query: string[] = ["webp", "resize", `size=${size}`]
+  // const file: string = require(`images/${filename}?${query.join("&")}`)
+  const file: string = require(`images/${filename}?webp&resize&size=640`)
+
+  return file
 }
 
-export default Image
+export function imageSet(path: string): string {
+  const filename: string = !!path ? path : "default.jpg"
+
+  const file = require(`images/${filename}?resize&sizes[]=640&sizes[]=750&sizes[]=1080`)
+  console.log(file)
+
+  return file.srcSet
+}
