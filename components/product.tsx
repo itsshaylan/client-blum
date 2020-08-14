@@ -41,7 +41,7 @@ export const ProductList: React.FunctionComponent<ProductListProps> = props => {
         })}
       </div>
       <div className={styles.list}>
-        <h3>{props.type}</h3>
+        <h3 className={styles.listing_heading}>{props.type}</h3>
         {props.products.map(product => {
           const price: string = `$${product.price.toFixed(2)}`
           return (
