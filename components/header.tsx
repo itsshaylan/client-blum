@@ -1,8 +1,19 @@
 import { useState } from "react"
 
-const Header = props => {
+type HeaderProps = {
+  path?: string
+}
+
+export const Header: React.FunctionComponent<HeaderProps> = props => {
   const [showMenu, setMenu] = useState(true)
 
+  const menu = [
+    { path: "/", name: "home" },
+    { path: "/gallery", name: "gallery" },
+    { path: "URLHERE", name: "e-gift" },
+    { path: "/products", name: "products" },
+    { path: "/policy", name: "policy" },
+  ]
   function toggle() {
     setMenu(!showMenu)
   }
@@ -11,34 +22,26 @@ const Header = props => {
     <header>
       <div className="container">
         <span className="header-logo">
-          <a>BLUM</a>
+          <a href="/">BLŪM</a>
           <a href="#" onClick={toggle}>
             <i className="fas fa-bars toggle"></i>
           </a>
         </span>
-        <nav style={{ display: showMenu ? "flex" : "none" }}>
+        <nav className={showMenu ? "hide" : "show"}>
+          <ul className="nav-links"></ul>
           <ul className="nav-links">
-            <li>
-              <a href="#" onClick={() => alert("c")}>
-                home
-              </a>
-            </li>
-            <li>
-              <a href="#">gallery</a>
-            </li>
-          </ul>
-          <ul className="nav-links">
-            <li>
-              <a href="#" className="active">
-                e-gift
-              </a>
-            </li>
-            <li>
-              <a href="#">products</a>
-            </li>
-            <li>
-              <a href="#">policy</a>
-            </li>
+            {menu.map(link => {
+              return (
+                <li>
+                  <a
+                    href={link.path}
+                    className={link.path === props.path ? "active" : ""}
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              )
+            })}
             <li className="">
               <a href="#" className="button">
                 book appointment
