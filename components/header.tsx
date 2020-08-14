@@ -4,16 +4,17 @@ type HeaderProps = {
   path?: string
 }
 
+export const menu = [
+  { path: "/", name: "home" },
+  { path: "/gallery", name: "gallery" },
+  { path: "https://go.booker.com/location/BlumNailBarV1", name: "e-gift" },
+  { path: "/products", name: "products" },
+  { path: "/policy", name: "policy" },
+]
+
 export const Header: React.FunctionComponent<HeaderProps> = props => {
   const [showMenu, setMenu] = useState(true)
 
-  const menu = [
-    { path: "/", name: "home" },
-    { path: "/gallery", name: "gallery" },
-    { path: "URLHERE", name: "e-gift" },
-    { path: "/products", name: "products" },
-    { path: "/policy", name: "policy" },
-  ]
   function toggle() {
     setMenu(!showMenu)
   }
@@ -32,7 +33,7 @@ export const Header: React.FunctionComponent<HeaderProps> = props => {
           <ul className="nav-links">
             {menu.map(link => {
               return (
-                <li>
+                <li key={link.name}>
                   <a
                     href={link.path}
                     className={link.path === props.path ? "active" : ""}
@@ -43,7 +44,10 @@ export const Header: React.FunctionComponent<HeaderProps> = props => {
               )
             })}
             <li className="">
-              <a href="#" className="button">
+              <a
+                href="https://go.booker.com/location/BlumNailBarV1"
+                className="button"
+              >
                 book appointment
               </a>
             </li>

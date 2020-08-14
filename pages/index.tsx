@@ -22,7 +22,10 @@ export default function Home({ data }) {
     <Layout page="/">
       <Banner path="5Q0A8786.jpg" padding="20vh">
         <h1 className={styles.title}>Beauty - Lashes - U - Me</h1>
-        <a className="button button-large" href="#">
+        <a
+          className="button button-large"
+          href="https://go.booker.com/location/BlumNailBarV1"
+        >
           BOOK ONLINE
         </a>
       </Banner>
