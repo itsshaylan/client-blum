@@ -2,6 +2,7 @@ import Header from "./header"
 
 import { Banner as banner } from "./banner"
 import Head from "next/head"
+import Footer from "./footer"
 export const Banner = banner
 
 type LayoutProps = {
@@ -35,6 +36,7 @@ export const Layout: React.FunctionComponent<LayoutProps> = props => {
       </Head>
       <Header path={props.page} />
       <main className="page">{props.children}</main>
+      <Footer path={props.page} />
     </div>
   )
 }
