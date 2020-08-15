@@ -36,7 +36,16 @@ h2 {
 }
 
 .page {
+  display: flex;
+
+  flex-direction: column;
+  min-height: 100vh;
+
   padding-top: 20px;
+
+  & main {
+    flex: 1;
+  }
 }
 
 .content {

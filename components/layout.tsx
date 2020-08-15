@@ -35,7 +35,7 @@ export const Layout: React.FunctionComponent<LayoutProps> = props => {
         <meta property="og:description" content={ogDesc} />
       </Head>
       <Header path={props.page} />
-      <main className="page">{props.children}</main>
+      <main>{props.children}</main>
       <Footer path={props.page} />
     </div>
   )
