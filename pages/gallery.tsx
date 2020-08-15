@@ -26,6 +26,7 @@ export default function Page(props) {
             {props.data.map(data => {
               return (
                 <img
+                  key={data}
                   className={styles.gallery_image}
                   src={`/images/${data}`}
                   width="200"
