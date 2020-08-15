@@ -24,14 +24,18 @@ export default function Page(props) {
         <div className="container">
           <div className={styles.gallery}>
             {props.data.map(data => {
+              // const imgsrc = require(`images/${data}?webp&resize&size=640`)
+              const imgsrc = `/images/gallery/${data}`
               return (
-                <img
-                  key={data}
-                  className={styles.gallery_image}
-                  src={`/images/${data}`}
-                  width="200"
-                  height="200"
-                />
+                <div
+                  className={styles.image}
+                  style={{
+                    backgroundImage: `url(${imgsrc})`,
+                    // backgroundSize: "contain",
+                    backgroundPosition: "center center",
+                    backgroundRepeat: "no-repeat",
+                  }}
+                >{` `}</div>
               )
             })}
           </div>
