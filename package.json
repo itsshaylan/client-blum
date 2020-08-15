@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "deploy": "next build && next export && gh-pages -d out",
