@@ -7,8 +7,7 @@
     "build": "next build && next export",
     "start": "next start",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "deploy": "next build && next export && gh-pages -d out",
-    "deployf": "next build && next export && gh-pages -fd out"
+    "deploy": "next build && next export && gh-pages -fd out -t true"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
