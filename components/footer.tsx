@@ -14,7 +14,6 @@ const socials = [
 ]
 
 export const Footer: React.FunctionComponent<FooterProps> = props => {
-  console.log(props)
   return (
     <>
       <footer className={styles.footer}>
@@ -41,7 +40,7 @@ export const Footer: React.FunctionComponent<FooterProps> = props => {
                 <h4>Social Media</h4>
                 {socials.map(social => {
                   return (
-                    <li className={styles.item}>
+                    <li key={social.name} className={styles.item}>
                       <a href={social.site}>{social.name}</a>
                     </li>
                   )
@@ -53,7 +52,7 @@ export const Footer: React.FunctionComponent<FooterProps> = props => {
                 <h4>Pages</h4>
                 {menu.map(page => {
                   return (
-                    <li className={styles.item}>
+                    <li key={page.name} className={styles.item}>
                       <a href={page.path}>{page.name}</a>
                     </li>
                   )
