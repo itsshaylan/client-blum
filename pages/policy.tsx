@@ -20,8 +20,8 @@ export default function PolicyPage({ data }) {
 
       <div className="content">
         <div className="container">
-          {data.map(policy => {
-            return <p>{policy}</p>
+          {data.forEach((policy, index) => {
+            return <p key={index}>policy</p>
           })}
         </div>
       </div>
