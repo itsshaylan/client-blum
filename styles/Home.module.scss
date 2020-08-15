@@ -2,10 +2,17 @@
 
 .title {
   font-size: 1.5em;
-  
+
   @include monitor {
     font-size: 5em;
   }
+}
+
+.homegrid {
+  display: block;
+  width: 100vw;
+  background-color: $primary;
+  padding: 10vw;
 }
 
 .grid {

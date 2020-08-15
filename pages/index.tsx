@@ -1,4 +1,5 @@
 import Head from "next/head"
+import React from "react"
 import styles from "../styles/Home.module.scss"
 import Layout from "../components/layout"
 import { Card, CardStyle } from "../components/card"
@@ -17,6 +18,7 @@ export async function getStaticProps() {
 
 export default function Home({ data }) {
   // console.log(imageSet("5Q0A8742.jpg"))
+  const homeimage = require(`images/home.jpg?webp&resize&size=1080`)
 
   return (
     <Layout page="/">
@@ -33,42 +35,29 @@ export default function Home({ data }) {
       <div className="content">
         <div className="container text-justify">
           <h2 className="text-center">Welcome to BLUM</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
-            erat tortor, eu lacus nec ultricies pellentesque. At faucibus magna
-            bibendum curabitur sit et. Non diam pellentesque arcu viverra
-            fermentum pulvinar blandit. Gravida vitae semper ante eu nisl. At
-            velit nibh amet elementum. Ac ac convallis ut posuere dolor. Amet
-            pharetra faucibus condimentum morbi ac. Morbi velit a elit, odio.
-          </p>
-          <p>
-            Turpis in mattis facilisis scelerisque. Condimentum id amet,
-            vestibulum rhoncus dui rutrum curabitur ultrices. Lorem volutpat,
-            hendrerit sapien ut vehicula. Donec quam lorem et tincidunt cursus
-            nulla vitae morbi id. Purus ante cursus curabitur eu proin quis
-            facilisi mi malesuada. Quam vulputate sit congue mauris in consequat
-            sed feugiat mauris. Posuere mattis euismod nam adipiscing ultricies.
-            Eget libero nulla varius dui purus diam velit placerat. Quis donec
-            eget et dui venenatis vitae in odio. Convallis libero, id interdum
-            pretium integer. Lectus hendrerit ligula mi mi ut. Dignissim lacinia
-            id vel, consectetur sagittis cras mi nulla. Ac quis volutpat
-            bibendum integer dolor morbi interdum.
-          </p>
-          <p>
-            Ut mauris lacinia purus vitae enim. Pellentesque erat commodo eu est
-            id. Amet, tempor, imperdiet luctus hac. Arcu enim gravida quis
-            varius dolor pharetra, viverra. Eros ultricies id iaculis eu nulla.
-            Metus erat bibendum dolor imperdiet adipiscing. Sed tortor commodo
-            accumsan volutpat ut eleifend dolor non tellus. Malesuada
-            scelerisque scelerisque vitae viverra.{" "}
+
+          <p className="text-center">
+            BLUM Nail Bar is a locally owned business founded in Wichita Kansas.
           </p>
         </div>
+      </div>
+
+      <div
+        className={styles.homegrid}
+        style={{
+          backgroundPosition: "center center",
+          backgroundImage: `url(${homeimage})`,
+          backgroundSize: "cover",
+        }}
+      >
+        {" "}
       </div>
       {/* images */}
       <div className={styles.grid}></div>
       {/* footer */}
       <div className="content">
         <div className="container">
+          <h2 className="text-center">Our Services</h2>
           <div className={CardStyle.card_container}>
             {data.map(d => {
               const dImg = d.images[0]
