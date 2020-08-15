@@ -28,6 +28,7 @@ export default function Page(props) {
               const imgsrc = `/images/gallery/${data}`
               return (
                 <div
+                  key={data}
                   className={styles.image}
                   style={{
                     backgroundImage: `url(${imgsrc})`,
