@@ -1,0 +1,12 @@
+@import "../styles/config.sass";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+
+.iframe {
+  margin: 16px;
+}

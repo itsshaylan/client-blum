@@ -7,6 +7,7 @@ type HeaderProps = {
 export const menu = [
   { path: "/", name: "home" },
   { path: "/gallery", name: "gallery" },
+  { path: "/media", name: "media" },
   { path: "https://go.booker.com/location/BlumNailBarV1", name: "e-gift" },
   { path: "/products", name: "products" },
   { path: "/policy", name: "policy" },
