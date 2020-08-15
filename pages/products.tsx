@@ -6,12 +6,6 @@ import Layout, { Banner } from "../components/layout"
 import { Product, ProductList } from "../components/product"
 
 export default function Page({ data }) {
-  // console.log("yes", data)
-
-  const list = data.map(d => {
-    const type = d.type
-  })
-
   return (
     <Layout
       page="/products"
@@ -24,18 +18,9 @@ export default function Page({ data }) {
 
       {/* grid */}
       <div className="content">
-        <div className="container">{/* a */}</div>
-
-        {data.map(d => {
-          return (
-            <ProductList
-              images={d.images}
-              key={d.type}
-              type={d.type}
-              products={d.products}
-            />
-          )
-        })}
+        <div className="container">
+          <div className={styles.listing}></div>
+        </div>
       </div>
     </Layout>
   )

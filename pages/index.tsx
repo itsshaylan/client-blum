@@ -7,7 +7,7 @@ import { Banner } from "../components/banner"
 // import { imageSet } from "../components/image"
 
 export async function getStaticProps() {
-  const json = require("../data/products.json")
+  const json = require("../data/services.json")
   return {
     props: {
       data: json,

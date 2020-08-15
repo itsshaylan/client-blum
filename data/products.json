@@ -1,0 +1,11 @@
+[
+  { "name": "Codi Lotion", "prices": [12], "description": "" },
+  { "name": "Codi Lotion (Small)", "prices": [5], "description": "" },
+  { "name": "Sugar Scrub", "prices": [9, 18], "description": "" },
+  {
+    "name": "Nail Care Kit",
+    "prices": [16],
+    "description": "Collagen gloves and socks, Glass file and cuticle pen"
+  },
+  {}
+]

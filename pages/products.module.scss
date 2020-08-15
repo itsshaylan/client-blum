@@ -1,0 +1,7 @@
+@import "../styles/config.sass";
+
+.listings {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+}
