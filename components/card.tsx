@@ -13,8 +13,7 @@ export const Card: React.FunctionComponent<CardProps> = props => {
   const imageSrc = require(`images/${imagePath}?webp&resize&size=640`)
 
   const style: React.CSSProperties = {
-    background: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #847577 100%),  url(${imageSrc}), #FFFFFF;
-border-radius: 16px 16px 0px 0px`,
+    background: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #847577 100%),  url(${imageSrc}), #FFFFFF; border-radius: 16px 16px 0px 0px`,
     backgroundSize: "cover",
     backgroundPosition: "center center",
   }
