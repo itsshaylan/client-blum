@@ -6,14 +6,14 @@ type BannerProps = {
 
 export const Banner: React.FunctionComponent<BannerProps> = props => {
   // props.path = !!props.path ? props.path : `default.jpg`
-  const imageSrc = require(`images/${props.path}?webp&resize&size=1024`)
-  const imageArr = require(`images/${props.path}?resize&sizes[]=300&sizes[]=600&sizes[]=1000`)
+  const imageSrc = require(`images/${props.path}?webp&resize&size=1080`)
+  // const imageArr = require(`images/${props.path}?resize&sizes[]=320&sizes[]=640&sizes[]=1080`)
 
-  const imageSet: string = imageArr.images
-    .map(image => {
-      return `"${image.path}" ${Math.round(image.height / imageArr.height)}x`
-    })
-    .join(", ")
+  // const imageSet: string = imageArr.images
+  //   .map(image => {
+  //     return `"${image.path}" ${Math.round(image.height / imageArr.height)}x`
+  //   })
+  //   .join(", ")
 
   const color: string = !!props.color ? props.color : "#4A4340"
   const padding: string = !!props.padding ? props.padding : "10vh"

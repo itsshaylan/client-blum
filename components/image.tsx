@@ -2,7 +2,7 @@ type ImageProps = {
   path: string
 }
 
-export const imageSizes: number[] = [640, 750, 1080]
+export const imageSizes: number[] = [320, 640, 1080]
 
 export function imageSrc(path: string, width?: number): string {
   const filename: string = !!path ? path : "default.jpg"

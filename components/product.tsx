@@ -24,7 +24,7 @@ export const ProductList: React.FunctionComponent<ProductListProps> = props => {
   const images: string[] = !!!props.images
     ? []
     : props.images.map(img => {
-        const imgpath = require(`images/${img}?webp&resize&size=340`)
+        const imgpath = require(`images/${img}?webp&resize&size=320`)
         return imgpath
       })
 
