@@ -46,7 +46,7 @@ export const ProductList: React.FunctionComponent<ProductListProps> = props => {
         {props.products.map(product => {
           const price: string = `$${product.price.toFixed(2)}`
           return (
-            <div className={styles.listing}>
+            <div key={product.name} className={styles.listing}>
               <span className={styles.name}>
                 {product.addon === "TRUE" ? "* " : ""}
                 {product.name}
