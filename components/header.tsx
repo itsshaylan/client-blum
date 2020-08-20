@@ -8,7 +8,7 @@ export const menu = [
   { path: "/", name: "home" },
   { path: "/gallery", name: "gallery" },
   { path: "/media", name: "media" },
-  { path: "https://go.booker.com/location/BlumNailBarV1", name: "e-gift" },
+  { path: "https://go.booker.com/location/BlumNailBarV1/buy/gift-certificate", name: "e-gift" },
   { path: "/products", name: "products" },
   // { path: "/policy", name: "policy" },
 ]
