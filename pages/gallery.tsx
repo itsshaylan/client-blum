@@ -15,7 +15,7 @@ export async function getStaticProps() {
 
 export default function Page(props) {
   return (
-    <Layout page="/gallery" title="Gallery" description="BLUM Shop Gallery">
+    <Layout page="/gallery" title="Gallery" description="BLŪM Shop Gallery">
       <Banner path="5Q0A8742.jpg">
         <h1>gallery</h1>
       </Banner>

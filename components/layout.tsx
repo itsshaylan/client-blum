@@ -31,7 +31,7 @@ export const Layout: React.FunctionComponent<LayoutProps> = props => {
         <meta property="og:url" content={ogURL} />
         <meta property="og:image" content={ogImage} />
         <meta property="og:locale" content="en_US" />
-        <meta property="og:site_name" content="BLUM" />
+        <meta property="og:site_name" content="BLŪM" />
         <meta property="og:description" content={ogDesc} />
       </Head>
       <Header path={props.page} />

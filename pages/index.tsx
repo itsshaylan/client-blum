@@ -34,7 +34,7 @@ export default function Home({ data }) {
       {/* welcome */}
       <div className="content">
         <div className="container text-justify">
-          <h2 className="text-center">Welcome to BLUM</h2>
+          <h2 className="text-center">Welcome to BLŪM</h2>
 
           <p className="text-center">
             BLUM Nail Bar is a locally owned business founded in Wichita Kansas.

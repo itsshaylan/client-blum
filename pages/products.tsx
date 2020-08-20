@@ -16,7 +16,7 @@ export default function Page({ data }) {
     <Layout
       page="/products"
       title="Products"
-      description="Services and Products provided by BLUM nail bar"
+      description="Services and Products provided by BLŪM nail bar"
     >
       <Banner path="5Q0A8761.jpg">
         <h1>products</h1>

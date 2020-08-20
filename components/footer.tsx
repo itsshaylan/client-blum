@@ -22,7 +22,7 @@ export const Footer: React.FunctionComponent<FooterProps> = props => {
           {/* pages */}
           <div className={styles.listing}>
             <div className={styles.category}>
-              <span className={styles.name}>BLUM</span>
+              <span className={styles.name}>BLŪM</span>
               <p>Nail Bar</p>
               <p>
                 3560 N Maize Rd Suite 102. <br />
@@ -32,7 +32,7 @@ export const Footer: React.FunctionComponent<FooterProps> = props => {
               <p>(316) 729-2586</p>
               <br />
               <p>
-                &copy; {new Date().getFullYear()} BLUM - all rights reserved
+                &copy; {new Date().getFullYear()} BLŪM - all rights reserved
               </p>
             </div>
             <div className={styles.category}>
