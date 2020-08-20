@@ -23,7 +23,7 @@ export const Footer: React.FunctionComponent<FooterProps> = props => {
           <div className={styles.listing}>
             <div className={styles.category}>
               <span className={styles.name}>BLUM</span>
-              <p>Nail Bar and Spa</p>
+              <p>Nail Bar</p>
               <p>
                 3560 N Maize Rd Suite 102. <br />
                 Wichita, KS 67205
