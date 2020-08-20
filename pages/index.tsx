@@ -37,7 +37,9 @@ export default function Home({ data }) {
           <h2 className="text-center">Welcome to BLŪM</h2>
 
           <p className="text-center">
-            BLUM Nail Bar is a locally owned business founded in Wichita Kansas.
+            BLŪM Nail Bar is founded in Wichita, Kansas.
+            <br />
+            Providing Wichita with the best beauty services since 2018.
           </p>
         </div>
       </div>
