@@ -8,7 +8,8 @@ export type ProductProps = {
 }
 
 export const Product: React.FunctionComponent<ProductProps> = props => {
-  const bgImage = require(`images/${props.image}?webp&resize&size=320`)
+  // const bgImage = require(`images/${props.image}?webp&resize&size=320`)
+  const bgImage = `/images/products/${props.image}`
 
   return (
     <div className={styles.product}>
