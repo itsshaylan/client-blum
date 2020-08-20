@@ -1,203 +1,5 @@
 [
   {
-    "type": "lashes",
-    "images": [
-      "93845579_2599029053536437_4111067214616140425_n.jpg",
-      "87349160_811956415976688_6923369958646498022_n.jpg"
-    ],
-    "products": [
-      {
-        "code": "blumclassic",
-        "type": "lashes",
-        "addon": "FALSE",
-        "price": 149,
-        "priceAlt": 75,
-        "name": "BLŪM Classic",
-        "description": "2 lash extensions is attached to 1 natural lash, perfect to enhance your natural lashes."
-      },
-      {
-        "code": "hybrid",
-        "type": "lashes",
-        "addon": "FALSE",
-        "price": 179,
-        "priceAlt": 89,
-        "name": "Hybrid",
-        "description": "1/2 advance classic lashes + 1/2 volume lashes. Gives the definition of classic with the fullness of volume. Great for those with thinner natural lashes."
-      },
-      {
-        "code": "volume",
-        "type": "lashes",
-        "addon": "FALSE",
-        "price": 199,
-        "priceAlt": 99,
-        "name": "Volume",
-        "description": "Multiple fans of 3-5 extensions are applied to a single natural lash. Volume lashes are lighter, fluffier and gives a fuller look. Perfect for those who have sparse lashes."
-      },
-      {
-        "code": "megavolume",
-        "type": "lashes",
-        "addon": "FALSE",
-        "price": 249,
-        "priceAlt": 129,
-        "name": "Mega Volume",
-        "description": "For the ultimate in weightless voluminous lashes. Mega volume gives eyelashes the appearance of intense volume, fullness, and length."
-      },
-      {
-        "code": "lashlifts",
-        "type": "lashes",
-        "addon": "FALSE",
-        "price": 70,
-        "priceAlt": 70,
-        "name": "Lash Lifts",
-        "description": "A semi permanent curl for your natural lashes that shapes them into the perfect eye-opening curl."
-      },
-      {
-        "code": "lasttint",
-        "type": "lashes",
-        "addon": "FALSE",
-        "price": 20,
-        "priceAlt": 20,
-        "name": "Last Tint",
-        "description": "Semi permanent color, often paired with a Lash Lift to make lashes darker and stand out more."
-      },
-      {
-        "code": "removal",
-        "type": "lashes",
-        "addon": "TRUE",
-        "price": 20,
-        "priceAlt": 20,
-        "name": "Removal",
-        "description": ""
-      },
-      {
-        "code": "foreignfills",
-        "type": "lashes",
-        "addon": "TRUE",
-        "price": 40,
-        "priceAlt": 40,
-        "name": "Foreign Fills",
-        "description": ""
-      }
-    ]
-  },
-  {
-    "type": "manicure",
-    "images": [
-      "116131226_179367853567062_1146380581535550114_n.jpg",
-      "115812534_3126083654136644_1504320628932308893_n.jpg"
-    ],
-    "products": [
-      {
-        "code": "classicmanicure",
-        "type": "manicure",
-        "addon": "FALSE",
-        "price": 23,
-        "priceAlt": 23,
-        "name": "Classic Manicure",
-        "description": "Hand soak, Cuticle trim, Massage, Hot towel and Polish"
-      },
-      {
-        "code": "blummanicure",
-        "type": "manicure",
-        "addon": "FALSE",
-        "price": 35,
-        "priceAlt": 35,
-        "name": "BLŪM Manicure",
-        "description": "Classic manicure plus exfoliating sugar scrub, moisturizing mask and extended massage."
-      },
-      {
-        "code": "gelpolishmanicure",
-        "type": "manicure",
-        "addon": "FALSE",
-        "price": 38,
-        "priceAlt": 38,
-        "name": "Gel Polish Manicure",
-        "description": "All the luxury of our BLŪM manicure with a choice gel color that dries instantly. Lasts two weeks."
-      },
-      {
-        "code": "dippowder",
-        "type": "manicure",
-        "addon": "FALSE",
-        "price": 44,
-        "priceAlt": 44,
-        "name": "Dip Powder",
-        "description": "Organic colored powder applied to natural nails or extend length, adding calcium and five kinds of vitamins."
-      },
-      {
-        "code": "acrylics",
-        "type": "manicure",
-        "addon": "FALSE",
-        "price": 35,
-        "priceAlt": 35,
-        "name": "Acrylics",
-        "description": "Polymer powder mixed with liquid, lengthens/strengthens nails."
-      },
-      {
-        "code": "acrylicfill",
-        "type": "manicure",
-        "addon": "FALSE",
-        "price": 24,
-        "priceAlt": 24,
-        "name": "Acrylic Fill",
-        "description": ""
-      },
-      {
-        "code": "ombrefullset",
-        "type": "manicure",
-        "addon": "FALSE",
-        "price": 59,
-        "priceAlt": 59,
-        "name": "Ombre Full Set",
-        "description": ""
-      },
-      {
-        "code": "manicure",
-        "type": "manicure",
-        "addon": "TRUE",
-        "price": 15,
-        "priceAlt": 15,
-        "name": "Manicure",
-        "description": ""
-      },
-      {
-        "code": "pedicure",
-        "type": "manicure",
-        "addon": "TRUE",
-        "price": 23,
-        "priceAlt": 23,
-        "name": "Pedicure",
-        "description": ""
-      },
-      {
-        "code": "addongel",
-        "type": "manicure",
-        "addon": "TRUE",
-        "price": 10,
-        "priceAlt": 10,
-        "name": "Add on Gel",
-        "description": ""
-      },
-      {
-        "code": "polishchange",
-        "type": "manicure",
-        "addon": "TRUE",
-        "price": 8,
-        "priceAlt": 10,
-        "name": "Polish Change",
-        "description": ""
-      },
-      {
-        "code": "gelpolish",
-        "type": "manicure",
-        "addon": "TRUE",
-        "price": 15,
-        "priceAlt": 20,
-        "name": "Gel Polish",
-        "description": ""
-      }
-    ]
-  },
-  {
     "type": "pedicure",
     "images": ["5Q0A8742.jpg", "5Q0A8786.jpg"],
     "products": [
@@ -411,11 +213,214 @@
     ]
   },
   {
-    "type": "eyebrows",
-    "images": ["5Q0A8742.jpg", "5Q0A8786.jpg"]
+    "type": "manicure",
+    "images": [
+      "116131226_179367853567062_1146380581535550114_n.jpg",
+      "115812534_3126083654136644_1504320628932308893_n.jpg"
+    ],
+    "products": [
+      {
+        "code": "classicmanicure",
+        "type": "manicure",
+        "addon": "FALSE",
+        "price": 23,
+        "priceAlt": 23,
+        "name": "Classic Manicure",
+        "description": "Hand soak, Cuticle trim, Massage, Hot towel and Polish"
+      },
+      {
+        "code": "blummanicure",
+        "type": "manicure",
+        "addon": "FALSE",
+        "price": 35,
+        "priceAlt": 35,
+        "name": "BLŪM Manicure",
+        "description": "Classic manicure plus exfoliating sugar scrub, moisturizing mask and extended massage."
+      },
+      {
+        "code": "gelpolishmanicure",
+        "type": "manicure",
+        "addon": "FALSE",
+        "price": 38,
+        "priceAlt": 38,
+        "name": "Gel Polish Manicure",
+        "description": "All the luxury of our BLŪM manicure with a choice gel color that dries instantly. Lasts two weeks."
+      },
+      {
+        "code": "dippowder",
+        "type": "manicure",
+        "addon": "FALSE",
+        "price": 44,
+        "priceAlt": 44,
+        "name": "Dip Powder",
+        "description": "Organic colored powder applied to natural nails or extend length, adding calcium and five kinds of vitamins."
+      },
+      {
+        "code": "acrylics",
+        "type": "manicure",
+        "addon": "FALSE",
+        "price": 35,
+        "priceAlt": 35,
+        "name": "Acrylics",
+        "description": "Polymer powder mixed with liquid, lengthens/strengthens nails."
+      },
+      {
+        "code": "acrylicfill",
+        "type": "manicure",
+        "addon": "FALSE",
+        "price": 24,
+        "priceAlt": 24,
+        "name": "Acrylic Fill",
+        "description": ""
+      },
+      {
+        "code": "ombrefullset",
+        "type": "manicure",
+        "addon": "FALSE",
+        "price": 59,
+        "priceAlt": 59,
+        "name": "Ombre Full Set",
+        "description": ""
+      },
+      {
+        "code": "manicure",
+        "type": "manicure",
+        "addon": "TRUE",
+        "price": 15,
+        "priceAlt": 15,
+        "name": "Manicure",
+        "description": ""
+      },
+      {
+        "code": "pedicure",
+        "type": "manicure",
+        "addon": "TRUE",
+        "price": 23,
+        "priceAlt": 23,
+        "name": "Pedicure",
+        "description": ""
+      },
+      {
+        "code": "addongel",
+        "type": "manicure",
+        "addon": "TRUE",
+        "price": 10,
+        "priceAlt": 10,
+        "name": "Add on Gel",
+        "description": ""
+      },
+      {
+        "code": "polishchange",
+        "type": "manicure",
+        "addon": "TRUE",
+        "price": 8,
+        "priceAlt": 10,
+        "name": "Polish Change",
+        "description": ""
+      },
+      {
+        "code": "gelpolish",
+        "type": "manicure",
+        "addon": "TRUE",
+        "price": 15,
+        "priceAlt": 20,
+        "name": "Gel Polish",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "type": "nail enhancement",
+    "title": "Nail Enhancement",
+    "images": ["nail"]
   },
   {
     "type": "waxing",
     "images": ["5Q0A8742.jpg", "5Q0A8786.jpg"]
+  },
+  {
+    "type": "eyebrows",
+    "images": ["5Q0A8742.jpg", "5Q0A8786.jpg"]
+  },
+  {
+    "type": "lashes",
+    "images": [
+      "93845579_2599029053536437_4111067214616140425_n.jpg",
+      "87349160_811956415976688_6923369958646498022_n.jpg"
+    ],
+    "products": [
+      {
+        "code": "blumclassic",
+        "type": "lashes",
+        "addon": "FALSE",
+        "price": 149,
+        "priceAlt": 75,
+        "name": "BLŪM Classic",
+        "description": "2 lash extensions is attached to 1 natural lash, perfect to enhance your natural lashes."
+      },
+      {
+        "code": "hybrid",
+        "type": "lashes",
+        "addon": "FALSE",
+        "price": 179,
+        "priceAlt": 89,
+        "name": "Hybrid",
+        "description": "1/2 advance classic lashes + 1/2 volume lashes. Gives the definition of classic with the fullness of volume. Great for those with thinner natural lashes."
+      },
+      {
+        "code": "volume",
+        "type": "lashes",
+        "addon": "FALSE",
+        "price": 199,
+        "priceAlt": 99,
+        "name": "Volume",
+        "description": "Multiple fans of 3-5 extensions are applied to a single natural lash. Volume lashes are lighter, fluffier and gives a fuller look. Perfect for those who have sparse lashes."
+      },
+      {
+        "code": "megavolume",
+        "type": "lashes",
+        "addon": "FALSE",
+        "price": 249,
+        "priceAlt": 129,
+        "name": "Mega Volume",
+        "description": "For the ultimate in weightless voluminous lashes. Mega volume gives eyelashes the appearance of intense volume, fullness, and length."
+      },
+      {
+        "code": "lashlifts",
+        "type": "lashes",
+        "addon": "FALSE",
+        "price": 70,
+        "priceAlt": 70,
+        "name": "Lash Lifts",
+        "description": "A semi permanent curl for your natural lashes that shapes them into the perfect eye-opening curl."
+      },
+      {
+        "code": "lasttint",
+        "type": "lashes",
+        "addon": "FALSE",
+        "price": 20,
+        "priceAlt": 20,
+        "name": "Last Tint",
+        "description": "Semi permanent color, often paired with a Lash Lift to make lashes darker and stand out more."
+      },
+      {
+        "code": "removal",
+        "type": "lashes",
+        "addon": "TRUE",
+        "price": 20,
+        "priceAlt": 20,
+        "name": "Removal",
+        "description": ""
+      },
+      {
+        "code": "foreignfills",
+        "type": "lashes",
+        "addon": "TRUE",
+        "price": 40,
+        "priceAlt": 40,
+        "name": "Foreign Fills",
+        "description": ""
+      }
+    ]
   }
 ]

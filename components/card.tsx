@@ -11,7 +11,7 @@ export const Card: React.FunctionComponent<CardProps> = props => {
   // props.image = !!props.image ? props.image : `default.jpg`
   const imagePath = !!props.image ? props.image : `default.jpg`
   // const imageSrc = require(`images/${imagePath}?webp&resize&size=640`)
-  const imageSrc = `/images/services/${props.type}.jpg`
+  const imageSrc = encodeURI(`/images/services/${props.type}.jpg`)
 
   const style: React.CSSProperties = {
     background: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #847577 100%),  url(${imageSrc}), #FFFFFF; border-radius: 16px`,
