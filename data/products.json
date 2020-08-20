@@ -31,26 +31,26 @@
   },
   {
     "image": "smb.jpg",
-    "name": "BLUM Shirt",
+    "name": "BLŪM Shirt",
     "price": 25,
-    "description": "Male Shirt - Black"
+    "description": "Crewneck - Black"
   },
   {
     "image": "smg.jpg",
-    "name": "BLUM Shirt",
+    "name": "BLŪM Shirt",
     "price": 25,
-    "description": "Male Shirt - Grey"
+    "description": "Crewneck - Gray"
   },
   {
     "image": "sfw.jpg",
-    "name": "BLUM Shirt",
+    "name": "BLŪM Shirt",
     "price": 25,
     "description": "V Neck - White"
   },
   {
     "image": "sfg.jpg",
-    "name": "BLUM Shirt",
+    "name": "BLŪM Shirt",
     "price": 25,
-    "description": "V Neck - Black"
+    "description": "V Neck - Gray"
   }
 ]
