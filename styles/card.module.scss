@@ -7,18 +7,20 @@
 
   @include monitor {
     flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
 .card {
   color: white;
+  display: block;
 
   margin-bottom: 16px;
 
   @include monitor {
-    width: 30vw;
-    margin: 0px 8px;
+    min-width: 30%;
+    margin: 0px 8px 8px 0px;
   }
 
   &_body {
@@ -29,6 +31,8 @@
     padding: 200px 16px 16px 16px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
 
     & h3 {
       font-size: 1.5em;

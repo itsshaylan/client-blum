@@ -409,5 +409,13 @@
         "description": ""
       }
     ]
+  },
+  {
+    "type": "eyebrows",
+    "images": ["5Q0A8742.jpg", "5Q0A8786.jpg"]
+  },
+  {
+    "type": "waxing",
+    "images": ["5Q0A8742.jpg", "5Q0A8786.jpg"]
   }
 ]
