@@ -1,0 +1,46 @@
+// FONTS
+$font-body: 'Nunito'
+$font-head: 'Playfair Display' 
+
+// SIZES
+$size-mobile: 425px
+$size-tablet: 768px
+$size-monitor: 1024px
+$size-max: 1140px
+
+// SIZES MIXIN
+@mixin mobile-only
+  @media (max-width: #{$size-tablet - 1px})
+    @content
+
+@mixin tablet-only
+  @media (min-width: #{$size-tablet}) and (max-width: #{$size-monitor - 1px})
+    @content
+
+@mixin tablet
+  @media (min-width: #{$size-mobile + 1})
+    @content
+
+@mixin monitor
+  @media (min-width: #{$size-monitor})
+    @content
+
+// MAIN COLORS
+$primary: #b76e79
+
+$background: lighten($primary, 50%)
+
+$black: #222222
+$white: #ffffff
+
+$navbar-bg: lighten($primary, 30%)
+$navbar-text: lighten($primary, 5%)
+$navbar-text-active: darken($primary, 30%)
+
+$footer-bg: lighten($black, 10%)
+$footer-text: $white
+
+$text: lighten($black, 20%)
+$text-header: lighten($black, 5%)
+
+$text-alt: darken($white, 0%)

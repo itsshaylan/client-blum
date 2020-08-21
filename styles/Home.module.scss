@@ -1,0 +1,28 @@
+@import "../styles/config.sass";
+
+.title {
+  font-size: 1.5em;
+
+  @include monitor {
+    font-size: 5em;
+  }
+}
+
+.homegrid {
+  display: block;
+  width: 100vw;
+  background-color: $primary;
+  padding: 10vw;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.vert {
+  display: flex;
+  flex-direction: column;
+}

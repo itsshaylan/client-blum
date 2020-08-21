@@ -1,0 +1,56 @@
+[
+  {
+    "image": "codilg.jpg",
+    "name": "Codi Lotion",
+    "price": 12,
+    "description": ""
+  },
+  {
+    "image": "codism.jpg",
+    "name": "Codi Lotion (Small)",
+    "price": 5,
+    "description": ""
+  },
+  {
+    "image": "sugar.jpg",
+    "name": "Sugar Scrub Small",
+    "price": 9,
+    "description": ""
+  },
+  {
+    "image": "sugar.jpg",
+    "name": "Sugar Scrub Large",
+    "price": 18,
+    "description": ""
+  },
+  {
+    "image": "nailkit.jpg",
+    "name": "Nail Care Kit",
+    "price": 16,
+    "description": "Collagen gloves and socks, Glass file and cuticle pen"
+  },
+  {
+    "image": "smb.jpg",
+    "name": "BLŪM Shirt",
+    "price": 25,
+    "description": "Crewneck - Black"
+  },
+  {
+    "image": "smg.jpg",
+    "name": "BLŪM Shirt",
+    "price": 25,
+    "description": "Crewneck - Gray"
+  },
+  {
+    "image": "sfw.jpg",
+    "name": "BLŪM Shirt",
+    "price": 25,
+    "description": "V Neck - White"
+  },
+  {
+    "image": "sfg.jpg",
+    "name": "BLŪM Shirt",
+    "price": 25,
+    "description": "V Neck - Gray"
+  }
+]

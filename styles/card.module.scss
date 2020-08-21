@@ -1,0 +1,51 @@
+@import "../styles/config.sass";
+
+.card_container {
+  display: flex;
+
+  flex-direction: column;
+
+  @include monitor {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.card {
+  color: white;
+  display: block;
+
+  margin-bottom: 16px;
+
+  @include monitor {
+    min-width: 30%;
+    margin: 0px 8px 8px 0px;
+  }
+
+  &_body {
+    display: flex;
+    flex-direction: column;
+
+    background-color: $primary;
+    padding: 200px 16px 16px 16px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+    & h3 {
+      font-size: 1.5em;
+      text-transform: capitalize;
+    }
+  }
+
+  &_footer {
+    background-color: lighten($primary, 20%);
+    padding: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+    text-align: center;
+  }
+}

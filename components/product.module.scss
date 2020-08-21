@@ -1,0 +1,33 @@
+@import "../styles/config.sass";
+
+.product {
+  display: block;
+
+  margin: 8px;
+  width: 100%;
+
+  border-radius: 8px;
+
+  @include tablet {
+    width: 300px;
+  }
+}
+
+.preview {
+  display: block;
+
+  height: 180px;
+  width: 100%;
+}
+
+.info {
+  display: block;
+  padding: 16px;
+
+  border: 1px solid darken($white, 10%);
+  border-radius: 0px 0px 8px 8px;
+
+  & p {
+    margin-bottom: 0px !important;
+  }
+}
