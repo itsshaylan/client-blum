@@ -10,7 +10,6 @@
     "deploy": "next build && next export && gh-pages -fd out -t true"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.14.0",
     "image-trace-loader": "^1.0.2",
     "next": "9.5.2",
     "next-optimized-images": "^2.6.2",
