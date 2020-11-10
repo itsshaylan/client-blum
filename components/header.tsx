@@ -10,7 +10,7 @@ export const menu = [
   { path: "/media", name: "media" },
   { path: "https://go.booker.com/location/BlumNailBarV1/buy/gift-certificate", name: "e-gift" },
   { path: "/products", name: "products" },
-  // { path: "/policy", name: "policy" },
+  { path: "/policy", name: "policy" },
 ]
 
 export const Header: React.FunctionComponent<HeaderProps> = props => {
