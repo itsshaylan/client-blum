@@ -4,11 +4,7 @@ import { Banner, Layout } from "../components/layout"
 
 export async function getStaticProps() {
   const json = require("../data/policy.json")
-  return {
-    props: {
-      data: json,
-    },
-  }
+  return { props: { data: json } }
 }
 
 export default function PolicyPage({ data }) {
@@ -20,8 +16,8 @@ export default function PolicyPage({ data }) {
 
       <div className="content">
         <div className="container">
-          {data.forEach((policy, index) => {
-            return <p key={index}>policy</p>
+          {data.map(policy => {
+            return <p>{policy}</p>
           })}
         </div>
       </div>
