@@ -12,7 +12,6 @@
 		{
 			"type": "npm",
 			"script": "dev",
-			"group": "none",
 			"label": "npm: dev",
 			"detail": "next dev",
 			"problemMatcher": [

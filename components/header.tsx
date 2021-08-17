@@ -1,6 +1,7 @@
 import { useState } from "react"
+import Link from "next/link"
 
-type HeaderProps = {
+interface HeaderProps {
   path?: string
 }
 
@@ -8,10 +9,12 @@ export const menu = [
   { path: "/", name: "home" },
   { path: "/gallery", name: "gallery" },
   { path: "/media", name: "media" },
-  { path: "https://go.booker.com/location/BlumNailBarV1/buy/gift-certificate", name: "e-gift" },
+  { path: "https://go.booker.com/location/BlumNailBarV1/buy/gift-certificate", name: "e-gift", ext: true },
   { path: "/products", name: "products" },
   { path: "/policy", name: "policy" },
 ]
+
+export const bookAppointment = "https://go.booker.com/location/BlumNailBarV1"
 
 export const Header: React.FunctionComponent<HeaderProps> = props => {
   const [showMenu, setMenu] = useState(true)
@@ -35,22 +38,26 @@ export const Header: React.FunctionComponent<HeaderProps> = props => {
             {menu.map(link => {
               return (
                 <li key={link.name}>
-                  <a
-                    href={link.path}
-                    className={link.path === props.path ? "active" : ""}
+                  <Link
+                    href={link.ext ? `/policy?redirect=${encodeURIComponent(encodeURIComponent(link.path))}` : link.path}
+                    as={!link.ext ? null : `/redirect?link=${encodeURIComponent(encodeURIComponent(link.path))}`}
                   >
-                    {link.name}
-                  </a>
+                    <a className={link.path === props.path ? "active" : ""}>
+                      {link.name}
+                    </a>
+                  </Link>
                 </li>
               )
             })}
             <li className="">
-              <a
-                href="https://go.booker.com/location/BlumNailBarV1"
-                className="button"
+              <Link
+                href={`/policy?redirect=${encodeURIComponent(encodeURIComponent(bookAppointment))}`}
+                as={`/redirect?link=${encodeURIComponent(encodeURIComponent(bookAppointment))}`}
               >
-                book appointment
-              </a>
+                <a className="button">
+                  book appointment
+                </a>
+              </Link>
             </li>
           </ul>
         </nav>

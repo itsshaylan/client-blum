@@ -1,7 +1,7 @@
 import Head from "next/head"
 import React from "react"
 import styles from "../styles/Home.module.scss"
-import Layout from "../components/layout"
+import { Layout } from "../components/layout"
 import { Card, CardStyle } from "../components/card"
 import { Banner } from "../components/banner"
 
@@ -17,7 +17,6 @@ export async function getStaticProps() {
 }
 
 export default function Home({ data }) {
-  // console.log(imageSet("5Q0A8742.jpg"))
   const homeimage = require(`images/home.jpg?webp&resize&size=1080`)
 
   return (
@@ -26,7 +25,7 @@ export default function Home({ data }) {
         <h1 className={styles.title}>Beauty - Lashes - U - Me</h1>
         <a
           className="button button-large"
-          href="https://go.booker.com/location/BlumNailBarV1"
+          href="/redirect"
         >
           BOOK ONLINE
         </a>

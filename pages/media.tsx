@@ -1,7 +1,7 @@
 import Head from "next/head"
 import React from "react"
 import styles from "./media.module.scss"
-import Layout from "../components/layout"
+import { Layout } from "../components/layout"
 import Banner from "../components/banner"
 
 export async function getStaticProps() {

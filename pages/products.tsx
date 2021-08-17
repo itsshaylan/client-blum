@@ -2,7 +2,7 @@ import Head from "next/head"
 import React from "react"
 import styles from "./products.module.scss"
 import { GetStaticProps, GetStaticPaths, GetServerSideProps } from "next"
-import Layout, { Banner } from "../components/layout"
+import { Banner, Layout } from "../components/layout"
 import { Product } from "../components/product"
 
 export async function getStaticProps() {
@@ -29,7 +29,7 @@ export default function Page({ data }) {
             {data.map(item => {
               return (
                 <Product
-                  key={item.name}
+                  key={`${item.name}${item.description}`}
                   name={item.name}
                   image={item.image}
                   price={item.price}

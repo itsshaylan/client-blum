@@ -1,6 +1,6 @@
 import Head from "next/head"
 import styles from "./gallery.module.scss"
-import Layout from "../components/layout"
+import { Layout } from "../components/layout"
 import Banner from "../components/banner"
 import { imageSizes } from "../components/image"
 
