@@ -51,6 +51,15 @@ export const Header: React.FunctionComponent<HeaderProps> = props => {
             })}
             <li className="">
               <Link
+                href={`tel:3167993982`}
+                as={`tel:3167993982`}
+              >
+                <a className="button">
+                  call us
+                </a>
+              </Link>
+            </li><li className="">
+              <Link
                 href={`/policy?redirect=${encodeURIComponent(encodeURIComponent(bookAppointment))}`}
                 as={`/redirect?link=${encodeURIComponent(encodeURIComponent(bookAppointment))}`}
               >
